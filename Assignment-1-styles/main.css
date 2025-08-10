@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #222;
+    margin : 0px;
+    background-color: rgb(235, 235, 235)
+}
+
+.HTML-Elements, .CSS-Elements, .Javascript-Elements {
+    background-color: white;
+    margin: 25px;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+    padding: 20px;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+}
+
+.topic-images {
+    height: 320px;
+    width: 320px;
+}
+
+.common-topics, .important-topics {
+    font-size: 1em;
+    color: rgb(31, 136, 218);
+    display: inline-block;
+    text-decoration: none;
+
+    transition: font-size 0.25s ease;
+}
+
+.common-topics:hover, .important-topics:hover {
+    font-size: 1.2em;
+    color: red;
+}
+
+.link {
+    position: relative;
+    display: inline-flex;
+    justify-content: start;
+    margin: 4px 8px;
+
+    transition: margin 0.25s ease;
+}
+
+.link:hover {
+    margin: 0px 8px;
+}
+
+.tooltip {
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+
+    position: absolute;
+    top: 30px;
+
+    display: inline-flex;
+    padding: 10px;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    pointer-events: none;
+    z-index: 100;
+}
+
+.js-tooltip {
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+
+    position: absolute;
+    bottom: 30px;
+
+    display: inline-flex;
+    padding: 10px;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    pointer-events: none;
+    z-index: 100;
+}
+
+.link:hover .tooltip, .link:hover .js-tooltip{
+    opacity: 1;
+}
+
+.js-tooltip img, .tooltip img {
+    height: 200px;
+    width: 400px;
+
+    border-radius: 14px;
+}

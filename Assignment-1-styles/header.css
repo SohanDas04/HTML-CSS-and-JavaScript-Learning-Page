@@ -1,0 +1,16 @@
+h1, h2, h3 {
+    margin: 0px;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 25px;
+}
+
+.topic-heading {
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    margin: 8px;
+}
